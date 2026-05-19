@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Damam K International | 21+ Years of Seafood Export</title>
+  <meta name="description" content="Discover the legacy of Damam K International. Over two decades of sustainable deep-sea fishing and premium seafood export excellence from Sri Lanka.">
+  <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Marcellus&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Damam K International",
+      "image": "https://www.damamk.com/assets/logos/logo-damamk-dark.svg",
+      "@id": "https://www.damamk.com/about-us",
+      "url": "https://www.damamk.com",
+      "telephone": "+94777320078",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "135/5 Church Road, Mattakkuliya",
+        "addressLocality": "Colombo 15",
+        "addressCountry": "LK"
+      }
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { primary: '#2073B5', secondary: '#E77A20', bg: '#FFFFFF', text: '#000000' } },
+          fontFamily: { heading: ['Marcellus', 'serif'], body: ['Manrope', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    #mobile-menu { display:none; }
+    #mobile-menu.open { display:block; }
+    /* Footer icon invert */
+    .footer-icon { filter: invert(1) brightness(2); }
+    /* Sticky WhatsApp button */
+    #sticky-whatsapp { position:fixed; bottom:28px; right:24px; z-index:999; width:56px; height:56px; background:#FFFFFF; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(0,0,0,0.25); transition:transform 0.3s,box-shadow 0.3s; }
+    #sticky-whatsapp:hover { transform:scale(1.1) translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,0.5); }
+  </style>
+</head>
+<body class="bg-brand-bg text-brand-text font-body antialiased">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <a href="/" class="flex-shrink-0">
+        <img id="navbar-logo" src="assets/logos/logo-damamk-light.svg" alt="Damam K International" class="h-14 w-auto transition-all duration-300">
+      </a>
+      <div class="hidden lg:flex space-x-8 items-center">
+        <a href="/" class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">Home</a>
+        <a href="about-us.html" class="text-brand-secondary font-body text-sm font-semibold tracking-wide uppercase border-b-2 border-brand-secondary pb-1">About Us</a>
+        <a href="export-products.html" class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">Export Products</a>
+        <a href="processing-and-quality.html" class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">Processing &amp; Quality</a>
+        <a href="contact.html" class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">Contact Us</a>
+        <a href="contact.html" class="bg-brand-primary text-white px-6 py-3 rounded-full hover:bg-brand-secondary transition-colors duration-300 font-body text-sm font-bold uppercase shadow-lg hover:-translate-y-1 transform">Request Export Catalog</a>
+      </div>
+      <div class="lg:hidden">
+        <button id="mobile-menu-btn" class="text-white focus:outline-none" aria-label="Open menu">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden bg-white shadow-xl px-6 py-6 space-y-4 border-t border-gray-100">
+      <a href="/" class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">Home</a>
+      <a href="about-us.html" class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-secondary">About Us</a>
+      <a href="export-products.html" class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">Export Products</a>
+      <a href="processing-and-quality.html" class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">Processing &amp; Quality</a>
+      <a href="contact.html" class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">Contact Us</a>
+      <a href="contact.html" class="inline-block bg-brand-primary text-white px-6 py-3 rounded-full font-body text-sm font-bold uppercase shadow">Request Export Catalog</a>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/hero/about-hero.webp" alt="Ship bow cutting through deep blue ocean waves at golden hour" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="font-heading text-5xl md:text-6xl text-white tracking-wider mb-6 drop-shadow-lg">Decades of Oceanic Expertise</h1>
+      <p class="font-body text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto drop-shadow-md">Building enduring international partnerships based on reliability, trust, and exceptional quality.</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Founder History -->
+  <section class="py-20 md:py-32 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2" data-aos="fade-right">
+          <h2 class="font-heading text-4xl md:text-5xl text-brand-text tracking-wide mb-6">A Legacy of Excellence</h2>
+          <p class="font-body text-lg text-gray-600 leading-relaxed mb-10">Founded over 21 years ago by proprietor Mr. K. Ramesh, Damam K International has grown into a leading force in deep sea fishing and global seafood export. His vision ensures every shipment meets strict international standards, providing unmatched value to our global buyers.</p>
+        </div>
+        <div class="lg:w-1/2 w-full" data-aos="fade-left">
+          <img src="assets/images/company/founder-ramesh.webp" alt="Mr. K. Ramesh, proprietor of Damam K International" class="w-full max-w-md mx-auto rounded-2xl shadow-2xl object-cover" style="min-height:400px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Values & Sourcing -->
+  <section class="py-20 md:py-32 bg-gray-50 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2 w-full" data-aos="fade-right">
+          <img src="assets/images/company/about-vessels.webp" alt="Aerial drone shot of commercial fishing vessels moored in a Sri Lankan harbour at dawn" class="w-full rounded-2xl shadow-2xl object-cover" style="min-height:350px;">
+        </div>
+        <div class="lg:w-1/2" data-aos="fade-left">
+          <h2 class="font-heading text-4xl md:text-5xl text-brand-text tracking-wide mb-6">Sourced with Absolute Respect</h2>
+          <p class="font-body text-lg text-gray-600 leading-relaxed mb-10">We maintain strong relationships with local fishing fleets around Sri Lanka to secure the highest quality catch. We prioritize excellent communication and reliability, ensuring complete transparency from the moment the fish leaves the water to the moment it reaches your facility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative bg-gray-900 text-white pt-20 pb-10 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-10">
+      <img src="assets/images/ui/footer-bg.webp" alt="" role="presentation" class="w-full h-full object-cover">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div class="col-span-1 md:col-span-2 lg:col-span-1">
+          <img src="assets/logos/logo-damamk-light.svg" alt="Damam K International" class="mb-6 h-14 w-auto">
+          <p class="font-heading text-lg text-brand-secondary mb-4 tracking-wide">Sri Lanka Leading Seafood Processor and Exporter.</p>
+          <p class="font-body text-gray-400 leading-relaxed text-sm">We deliver premium grade seafood with uncompromising quality, trusted by international buyers across global markets.</p>
+        </div>
+        <div class="lg:pl-8">
+          <h4 class="font-heading text-xl tracking-wide mb-6 border-b border-gray-700 pb-2">Quick Links</h4>
+          <ul class="space-y-3 font-body text-gray-400 text-sm">
+            <li><a href="/" class="hover:text-brand-secondary transition-colors duration-300">Home</a></li>
+            <li><a href="about-us.html" class="text-brand-secondary">About Us</a></li>
+            <li><a href="export-products.html" class="hover:text-brand-secondary transition-colors duration-300">Export Products</a></li>
+            <li><a href="processing-and-quality.html" class="hover:text-brand-secondary transition-colors duration-300">Processing &amp; Quality</a></li>
+            <li><a href="contact.html" class="hover:text-brand-secondary transition-colors duration-300">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-span-1 md:col-span-2">
+          <h4 class="font-heading text-xl tracking-wide mb-6 border-b border-gray-700 pb-2">Global Sales &amp; Support</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 font-body text-gray-400 text-sm">
+            <div>
+              <p class="mb-3 flex items-start">
+                <img src="assets/icons/icon-location.svg" alt="" class="footer-icon w-5 h-5 mr-3 mt-1 flex-shrink-0">
+                135/5 Church Road, Mattakkuliya,<br>Colombo 15, Sri Lanka
+              </p>
+              <div class="mt-4 pl-8 font-body text-xs text-gray-500 space-y-1">
+                <p>Monday to Friday: 9:00 am to 5:00 pm</p>
+                <p>Saturday: 9:00 am to 1:00 pm</p>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 flex items-center hover:text-brand-secondary transition-colors duration-300">
+                <img src="assets/icons/icon-email.svg" alt="" class="footer-icon w-5 h-5 mr-3 flex-shrink-0">
+                <a href="mailto:damamk@sltnet.lk">damamk@sltnet.lk</a>
+              </p>
+              <p class="mb-3 flex items-center hover:text-brand-secondary transition-colors duration-300">
+                <img src="assets/icons/icon-email.svg" alt="" class="footer-icon w-5 h-5 mr-3 flex-shrink-0">
+                <a href="mailto:damamkint@gmail.com">damamkint@gmail.com</a>
+              </p>
+              <p class="mb-3 flex items-center hover:text-brand-secondary transition-colors duration-300">
+                <img src="assets/icons/icon-phone.svg" alt="" class="footer-icon w-5 h-5 mr-3 flex-shrink-0">
+                <a href="tel:+94777320078">+94 77 732 0078</a>
+              </p>
+              <p class="mb-3 flex items-center hover:text-brand-secondary transition-colors duration-300">
+                <img src="assets/icons/icon-phone.svg" alt="" class="footer-icon w-5 h-5 mr-3 flex-shrink-0">
+                <a href="tel:+94112540922">+94 11 254 0922</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Google Map Embed -->
+      <div class="mb-12 rounded-xl overflow-hidden shadow-lg">
+        <iframe
+          title="Damam K International Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5!2d79.8617!3d6.9745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a0000000001%3A0x0!2s135%2F5+Church+Road%2C+Mattakkuliya%2C+Colombo+15%2C+Sri+Lanka!5e0!3m2!1sen!2slk!4v1716000000000"
+          width="100%" height="280" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center font-body text-xs text-gray-500">
+        <p>Copyright 2026 Damam K International. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky WhatsApp Button -->
+  <a id="sticky-whatsapp" href="https://wa.me/94777320078" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <img src="assets/icons/icon-whatsapp.svg" alt="WhatsApp" style="width:36px;height:36px;">
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, offset: 50, duration: 800 });
+
+    const navbar = document.getElementById('navbar');
+    const navLogo = document.getElementById('navbar-logo');
+    const navLinks = navbar.querySelectorAll('a.nav-link');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.remove('bg-transparent', 'py-4');
+        navbar.classList.add('bg-white', 'shadow-md', 'py-2');
+        navLinks.forEach(el => { el.classList.remove('text-white'); el.classList.add('text-brand-text'); });
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        if (mobileBtn) { mobileBtn.classList.remove('text-white'); mobileBtn.classList.add('text-brand-text'); }
+        if (navLogo) { navLogo.src = 'assets/logos/logo-damamk-dark.svg'; navLogo.classList.remove('h-14'); navLogo.classList.add('h-12'); }
+      } else {
+        navbar.classList.add('bg-transparent', 'py-4');
+        navbar.classList.remove('bg-white', 'shadow-md', 'py-2');
+        navLinks.forEach(el => { el.classList.add('text-white'); el.classList.remove('text-brand-text'); });
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        if (mobileBtn) { mobileBtn.classList.add('text-white'); mobileBtn.classList.remove('text-brand-text'); }
+        if (navLogo) { navLogo.src = 'assets/logos/logo-damamk-light.svg'; navLogo.classList.add('h-14'); navLogo.classList.remove('h-12'); }
+      }
+    });
+
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

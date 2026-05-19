@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Lanka's Leading Seafood Exporter | Damam K International</title>
+  <meta name="description"
+    content="Premium processor &amp; exporter of fresh Yellowfin Tuna, Swordfish, and Reef Fish to USA, Canada &amp; Europe. ISO 22000 &amp; HACCP Certified. Get current rates today.">
+  <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Marcellus&display=swap"
+    rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.4.15/swiper-bundle.min.css" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Damam K International",
+      "image": "https://www.damamk.com/assets/logos/logo-damamk-dark.svg",
+      "@id": "https://www.damamk.com",
+      "url": "https://www.damamk.com",
+      "telephone": "+94777320078",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "135/5 Church Road, Mattakkuliya",
+        "addressLocality": "Colombo 15",
+        "addressCountry": "LK"
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }]
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#2073B5',
+              secondary: '#E77A20',
+              bg: '#FFFFFF',
+              text: '#000000'
+            }
+          },
+          fontFamily: {
+            heading: ['Marcellus', 'serif'],
+            body: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Hero video fills container */
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Swiper pagination dots brand color */
+    .swiper-pagination-bullet-active {
+      background: #2073B5 !important;
+    }
+
+    /* Mobile menu slide */
+    #mobile-menu {
+      display: none;
+    }
+
+    #mobile-menu.open {
+      display: block;
+    }
+
+    /* Footer icon invert — SVG icons appear white on dark footer bg */
+    .footer-icon {
+      filter: invert(1) brightness(2);
+    }
+
+    /* Sticky WhatsApp button */
+    #sticky-whatsapp {
+      position: fixed;
+      bottom: 28px;
+      right: 24px;
+      z-index: 999;
+      width: 56px;
+      height: 56px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    #sticky-whatsapp:hover {
+      transform: scale(1.1) translateY(-2px);
+      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
+    }
+
+    /* Swiper card equal height */
+    .core-categories-slider .swiper-slide {
+      height: auto;
+      display: flex;
+    }
+
+    .core-categories-slider .swiper-slide>div {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-bg text-brand-text font-body antialiased">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <a href="/" class="flex-shrink-0">
+        <img id="navbar-logo" src="assets/logos/logo-damamk-light.svg" alt="Damam K International"
+          class="h-14 w-auto transition-all duration-300">
+      </a>
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex space-x-8 items-center">
+        <a href="/"
+          class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">Home</a>
+        <a href="about-us.html"
+          class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">About
+          Us</a>
+        <a href="export-products.html"
+          class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">Export
+          Products</a>
+        <a href="processing-and-quality.html"
+          class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">Processing
+          &amp; Quality</a>
+        <a href="contact.html"
+          class="nav-link text-white hover:text-brand-secondary transition-colors duration-300 font-body text-sm font-semibold tracking-wide uppercase">Contact
+          Us</a>
+        <a href="contact.html"
+          class="bg-brand-primary text-white px-6 py-3 rounded-full hover:bg-brand-secondary transition-colors duration-300 font-body text-sm font-bold uppercase shadow-lg hover:-translate-y-1 transform">Request
+          Export Catalog</a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden">
+        <button id="mobile-menu-btn" class="text-white focus:outline-none" aria-label="Open menu">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu Panel -->
+    <div id="mobile-menu" class="lg:hidden bg-white shadow-xl px-6 py-6 space-y-4 border-t border-gray-100">
+      <a href="/"
+        class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">Home</a>
+      <a href="about-us.html"
+        class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">About
+        Us</a>
+      <a href="export-products.html"
+        class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">Export
+        Products</a>
+      <a href="processing-and-quality.html"
+        class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">Processing
+        &amp; Quality</a>
+      <a href="contact.html"
+        class="block font-body text-sm font-semibold tracking-wide uppercase text-brand-text hover:text-brand-secondary transition-colors">Contact
+        Us</a>
+      <a href="contact.html"
+        class="inline-block bg-brand-primary text-white px-6 py-3 rounded-full font-body text-sm font-bold uppercase shadow">Request
+        Export Catalog</a>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <!-- Background video: muted autoplay loop per agent.md §VIII -->
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero/home-hero-poster.webp">
+        <source src="assets/videos/hero-ocean-vessel-loop.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="font-heading text-5xl md:text-7xl text-white tracking-wider mb-6 drop-shadow-lg">Sri Lanka's Leading
+        Premium Seafood Exporter</h1>
+      <p class="font-body text-xl md:text-2xl text-gray-200 leading-relaxed mb-10 max-w-3xl mx-auto drop-shadow-md">
+        Supplying the finest fresh and frozen seafood to buyers in the USA, Canada, and Europe.</p>
+      <a href="contact.html"
+        class="inline-block bg-brand-primary text-white font-body font-semibold tracking-wide uppercase px-8 py-4 rounded-full hover:bg-brand-secondary hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">Get
+        Current Rates</a>
+    </div>
+  </section>
+
+  <!-- Section 2: Trust Bar -->
+  <section class="py-12 bg-white relative z-20 -mt-10 shadow-xl mx-4 md:mx-auto max-w-6xl rounded-xl">
+    <div class="flex flex-wrap justify-around items-center px-4 gap-8">
+      <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/images/badges/badge-iso22000.webp" alt="ISO 22000 Certified badge"
+          class="mb-4 w-24 h-24 object-contain">
+        <p class="font-heading text-lg text-brand-primary tracking-wide text-center font-bold">ISO 22000 Certified</p>
+      </div>
+      <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/images/badges/badge-haccp.webp" alt="HACCP Compliant badge"
+          class="mb-4 w-24 h-24 object-contain">
+        <p class="font-heading text-lg text-brand-primary tracking-wide text-center font-bold">HACCP Compliant</p>
+      </div>
+      <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/images/badges/badge-21years.webp" alt="21+ Years Experience badge"
+          class="mb-4 w-24 h-24 object-contain">
+        <p class="font-heading text-lg text-brand-primary tracking-wide text-center font-bold">Over 21 Years of
+          Excellence</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Core Export Categories -->
+  <section class="py-20 md:py-32 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div data-aos="fade-up">
+        <h2 class="font-heading text-4xl md:text-5xl text-brand-text tracking-wide mb-6">Premium Export Categories</h2>
+        <p class="font-body text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-16">Sustainably sourced from the
+          Indian Ocean and processed for flawless global delivery.</p>
+      </div>
+
+      <div class="swiper-container core-categories-slider pb-12" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <!-- Fresh Tuna -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col mx-2">
+              <div class="relative overflow-hidden">
+                <img src="assets/images/home/categories/cat-fresh-tuna.webp" alt="Fresh Yellowfin Tuna loins on ice"
+                  class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105">
+              </div>
+              <div class="p-8 text-left flex-grow flex flex-col">
+                <h3 class="font-heading text-2xl text-brand-primary tracking-wide mb-3">Fresh Yellowfin Tuna</h3>
+                <p class="font-body text-gray-600 leading-relaxed mb-6 flex-grow">Sashimi grade quality processed to
+                  strict international market demands.</p>
+                <a href="export-products.html#fresh-tuna"
+                  class="inline-flex items-center text-brand-secondary font-body font-bold uppercase tracking-wider hover:text-brand-primary transition-colors duration-300">
+                  View Specifications
+                  <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Swordfish -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col mx-2">
+              <div class="relative overflow-hidden">
+                <img src="assets/images/home/categories/cat-swordfish.webp" alt="Premium Swordfish steaks on ice"
+                  class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105">
+              </div>
+              <div class="p-8 text-left flex-grow flex flex-col">
+                <h3 class="font-heading text-2xl text-brand-primary tracking-wide mb-3">Premium Swordfish</h3>
+                <p class="font-body text-gray-600 leading-relaxed mb-6 flex-grow">Expertly graded and prepared for
+                  optimal freshness upon arrival.</p>
+                <a href="export-products.html#swordfish"
+                  class="inline-flex items-center text-brand-secondary font-body font-bold uppercase tracking-wider hover:text-brand-primary transition-colors duration-300">
+                  View Specifications
+                  <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Reef Fish -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col mx-2">
+              <div class="relative overflow-hidden">
+                <img src="assets/images/home/categories/cat-reef-fish.webp" alt="Fresh Reef Fish arrangement on ice"
+                  class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105">
+              </div>
+              <div class="p-8 text-left flex-grow flex flex-col">
+                <h3 class="font-heading text-2xl text-brand-primary tracking-wide mb-3">Reef Fish Collection</h3>
+                <p class="font-body text-gray-600 leading-relaxed mb-6 flex-grow">A diverse selection of deep water
+                  species to supply high end culinary markets.</p>
+                <a href="export-products.html#reef-fish"
+                  class="inline-flex items-center text-brand-secondary font-body font-bold uppercase tracking-wider hover:text-brand-primary transition-colors duration-300">
+                  View Selection
+                  <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Processing Excellence Teaser -->
+  <section class="py-20 md:py-32 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2" data-aos="fade-right">
+          <h2 class="font-heading text-4xl md:text-5xl text-brand-text tracking-wide mb-6">Uncompromising Quality
+            Control</h2>
+          <p class="font-body text-lg text-gray-600 leading-relaxed mb-10">From ocean to export, every product is
+            handled with strict quality control and complete transparency. Our ISO 22000 certified facility ensures
+            flawless temperature management.</p>
+          <a href="processing-and-quality.html"
+            class="inline-block bg-white border-2 border-brand-primary text-brand-primary font-body font-semibold tracking-wide uppercase px-8 py-4 rounded-full hover:bg-brand-primary hover:text-white hover:-translate-y-1 transition-all duration-300 shadow hover:shadow-lg">Explore
+            Our Process</a>
+        </div>
+        <div class="lg:w-1/2 relative w-full" data-aos="fade-left">
+          <img src="assets/images/ui/home-process-teaser.webp" alt="Modern stainless steel seafood processing facility"
+            class="w-full rounded-2xl shadow-2xl relative z-10 object-cover" style="min-height:400px;">
+          <!-- Parallax overlay badge -->
+          <div class="absolute -bottom-10 -left-10 z-20 hidden md:block">
+            <img src="assets/images/hero/quality-hero.webp" alt="Temperature gauge at 0 degrees celsius"
+              class="w-64 h-64 rounded-xl shadow-2xl border-8 border-white object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Awards & Authority -->
+  <section class="py-20 md:py-32 bg-brand-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div data-aos="fade-up">
+        <h2 class="font-heading text-4xl md:text-5xl text-white tracking-wide mb-6">Recognized for Excellence</h2>
+        <p class="font-body text-lg text-blue-100 leading-relaxed max-w-3xl mx-auto mb-16">Awarded for outstanding
+          export quality and reliability in the global seafood industry. We take pride in our extensive local and
+          international accolades.</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-10" data-aos="fade-up" data-aos-delay="200">
+        <div
+          class="bg-white bg-opacity-10 border border-white border-opacity-20 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <img src="assets/images/company/award-international.webp" alt="International award trophy"
+            class="w-64 h-64 object-contain mx-auto">
+        </div>
+        <div
+          class="bg-white bg-opacity-10 border border-white border-opacity-20 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <img src="assets/images/company/award-local.webp" alt="Local award trophy"
+            class="w-64 h-64 object-contain mx-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Global Reach -->
+  <section class="py-20 md:py-32 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div data-aos="fade-up">
+        <h2 class="font-heading text-4xl md:text-5xl text-brand-text tracking-wide mb-6">Connecting Sri Lanka to the
+          World</h2>
+        <p class="font-body text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-16">Trusted by major seafood
+          importers, distributors, and hospitality buyers across North America and European markets.</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/images/ui/home-global-map.webp"
+          alt="World map showing export routes from Sri Lanka to USA, Canada and Europe"
+          class="w-full max-w-5xl mx-auto rounded-xl shadow-2xl overflow-hidden object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Pre-Footer CTA -->
+  <section class="py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/ui/home-cta-bg.webp" alt="" role="presentation" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
+      <h2 class="font-heading text-4xl md:text-5xl text-white tracking-wide mb-6">Ready to Elevate Your Seafood Supply?
+      </h2>
+      <p class="font-body text-lg text-gray-300 leading-relaxed mb-10">Request our complete export catalog or speak
+        directly with our global sales team to secure your premium supply chain today.</p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+        <a href="contact.html"
+          class="bg-brand-secondary text-white font-body font-bold tracking-wide uppercase px-8 py-4 rounded-full hover:bg-white hover:text-brand-secondary hover:-translate-y-1 transition-all duration-300 shadow-lg w-full sm:w-auto text-center">Download
+          Export Catalog</a>
+        <a href="contact.html"
+          class="bg-transparent border-2 border-white text-white font-body font-bold tracking-wide uppercase px-8 py-4 rounded-full hover:bg-brand-primary hover:border-brand-primary hover:-translate-y-1 transition-all duration-300 shadow-lg w-full sm:w-auto text-center">Contact
+          Sales Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative bg-gray-900 text-white pt-20 pb-10 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-10">
+      <img src="assets/images/ui/footer-bg.webp" alt="" role="presentation" class="w-full h-full object-cover">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div class="col-span-1 md:col-span-2 lg:col-span-1">
+          <img src="assets/logos/logo-damamk-light.svg" alt="Damam K International" class="mb-6 h-14 w-auto">
+          <p class="font-heading text-lg text-brand-secondary mb-4 tracking-wide">Sri Lanka Leading Seafood Processor
+            and Exporter.</p>
+          <p class="font-body text-gray-400 leading-relaxed text-sm">We deliver premium grade seafood with
+            uncompromising quality, trusted by international buyers across global markets.</p>
+        </div>
+
+        <div class="lg:pl-8">
+          <h4 class="font-heading text-xl tracking-wide mb-6 border-b border-gray-700 pb-2">Quick Links</h4>
+          <ul class="space-y-3 font-body text-gray-400 text-sm">
+            <li><a href="/" class="hover:text-brand-secondary transition-colors duration-300">Home</a></li>
+            <li><a href="about-us.html" class="hover:text-brand-secondary transition-colors duration-300">About Us</a>
+            </li>
+            <li><a href="export-products.html" class="hover:text-brand-secondary transition-colors duration-300">Export
+                Products</a></li>
+            <li><a href="processing-and-quality.html"
+                class="hover:text-brand-secondary transition-colors duration-300">Processing &amp; Quality</a></li>
+            <li><a href="contact.html" class="hover:text-brand-secondary transition-colors duration-300">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-1 md:col-span-2">
+          <h4 class="font-heading text-xl tracking-wide mb-6 border-b border-gray-700 pb-2">Global Sales &amp; Support
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 font-body text-gray-400 text-sm">
+            <div>
+              <p class="mb-3 flex items-start">
+                <img src="assets/icons/icon-location.svg" alt="" class="footer-icon w-5 h-5 mr-3 mt-1 flex-shrink-0">
+                135/5 Church Road, Mattakkuliya,<br>Colombo 15, Sri Lanka
+              </p>
+              <div class="mt-4 pl-8 font-body text-xs text-gray-500 space-y-1">
+                <p>Monday to Friday: 9:00 am to 5:00 pm</p>
+                <p>Saturday: 9:00 am to 1:00 pm</p>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 flex items-center hover:text-brand-secondary transition-colors duration-300">
+                <img src="assets/icons/icon-email.svg" alt="" class="footer-icon w-5 h-5 mr-3 flex-shrink-0">
+                <a href="mailto:damamk@sltnet.lk">damamk@sltnet.lk</a>
+              </p>
+              <p class="mb-3 flex items-center hover:text-brand-secondary transition-colors duration-300">
+                <img src="assets/icons/icon-email.svg" alt="" class="footer-icon w-5 h-5 mr-3 flex-shrink-0">
+                <a href="mailto:damamkint@gmail.com">damamkint@gmail.com</a>
+              </p>
+              <p class="mb-3 flex items-center hover:text-brand-secondary transition-colors duration-300">
+                <img src="assets/icons/icon-phone.svg" alt="" class="footer-icon w-5 h-5 mr-3 flex-shrink-0">
+                <a href="tel:+94777320078">+94 77 732 0078</a>
+              </p>
+              <p class="mb-3 flex items-center hover:text-brand-secondary transition-colors duration-300">
+                <img src="assets/icons/icon-phone.svg" alt="" class="footer-icon w-5 h-5 mr-3 flex-shrink-0">
+                <a href="tel:+94112540922">+94 11 254 0922</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Map Embed -->
+      <div class="mb-12 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up">
+        <iframe title="Damam K International Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5!2d79.8617!3d6.9745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a0000000001%3A0x0!2s135%2F5+Church+Road%2C+Mattakkuliya%2C+Colombo+15%2C+Sri+Lanka!5e0!3m2!1sen!2slk!4v1716000000000"
+          width="100%" height="280" style="border:0; display:block;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div
+        class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center font-body text-xs text-gray-500">
+        <p>Copyright 2026 Damam K International. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky WhatsApp Button -->
+  <a id="sticky-whatsapp" href="https://wa.me/94777320078" target="_blank" rel="noopener"
+    aria-label="Chat with us on WhatsApp">
+    <img src="assets/icons/icon-whatsapp.svg" alt="WhatsApp" style="width:36px;height:36px;">
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper@6.4.15/swiper-bundle.min.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({ once: true, offset: 50, duration: 800 });
+
+    // Navbar scroll logic — targets real <img> element
+    const navbar = document.getElementById('navbar');
+    const navLogo = document.getElementById('navbar-logo');
+    const navLinks = navbar.querySelectorAll('a.nav-link');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.remove('bg-transparent', 'py-4');
+        navbar.classList.add('bg-white', 'shadow-md', 'py-2');
+        navLinks.forEach(el => { el.classList.remove('text-white'); el.classList.add('text-brand-text'); });
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        if (mobileBtn) { mobileBtn.classList.remove('text-white'); mobileBtn.classList.add('text-brand-text'); }
+        if (navLogo) { navLogo.src = 'assets/logos/logo-damamk-dark.svg'; navLogo.classList.remove('h-14'); navLogo.classList.add('h-12'); }
+      } else {
+        navbar.classList.add('bg-transparent', 'py-4');
+        navbar.classList.remove('bg-white', 'shadow-md', 'py-2');
+        navLinks.forEach(el => { el.classList.add('text-white'); el.classList.remove('text-brand-text'); });
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        if (mobileBtn) { mobileBtn.classList.add('text-white'); mobileBtn.classList.remove('text-brand-text'); }
+        if (navLogo) { navLogo.src = 'assets/logos/logo-damamk-light.svg'; navLogo.classList.add('h-14'); navLogo.classList.remove('h-12'); }
+      }
+    });
+
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+
+    // Initialize Swiper — equal slide height enforced via CSS, 3 slides on desktop
+    new Swiper('.core-categories-slider', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+    });
+  </script>
+</body>
+
+</html>
